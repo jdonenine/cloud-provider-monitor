@@ -1,0 +1,17 @@
+application:
+  gcp:
+    enabled: ${GCP_ENABLED:true}
+    project-id: ${GCP_PROJECT_ID}
+    credentials-path: ${GCP_CREDENTIALS_PATH}
+    storage:
+      enabled: ${GCP_STORAGE_ENABLED:true}
+      frequency-m: ${GCP_STORAGE_FREQUENCY_M:1}
+    compute:
+      enabled: ${GCP_COMPUTE_ENABLED:true}
+      frequency-m: ${GCP_COMPUTE_FREQUENCY_M:1}
+    kubernetes:
+      enabled: ${GCP_KUBERNETES_ENABLED:true}
+      frequency-m: ${GCP_KUBERNETES_FREQUENCY_M:1}
+spring:
+  quartz:
+    job-store-type: memory
